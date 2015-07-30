@@ -11,22 +11,13 @@ This project is a Project Time Reporting Manager for Open Organization.
  * Weekly Summary
 
 ## Doing Feature
-
- TODO 
  
- UI
- Test Integration/Unit week et imputation -> service
- GitHub
+ * UI
+ * Test Integration/Unit week et imputation -> service
+ * Controller admin section
+ * Markdow for all description text area
+ * JNDI + Admin user
  
- Plugin java melody
- Plugin console
- Plugin dbConsole
- Controller admin section
- 
- * markdow for all description text area
- * JNDI
- 
-
 
 ## Roadmap
 

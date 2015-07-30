@@ -1,6 +1,4 @@
-package
+package thepieuvre.iknowwhatyoudidlastweek.security
 
-thepieuvre.iknowwhatyoudidlastweek.security.
-
-        class RegisterController extends grails.plugin.springsecurity.ui.RegisterController {
+class RegisterController extends grails.plugin.springsecurity.ui.RegisterController {
 }
