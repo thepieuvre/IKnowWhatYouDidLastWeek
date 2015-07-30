@@ -15,9 +15,7 @@ This project is a Project Time Reporting Manager for Open Organization.
  * UI
  * Test Integration/Unit week et imputation -> service
  * Controller admin section
- * Markdow for all description text area
- * JNDI
- 
+ * Markdow for all description text area 
 
 ## Roadmap
 
