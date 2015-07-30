@@ -30,15 +30,11 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-            properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                 dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
                 pooled = false
                 jndiName = "java:comp/env/jdbc/iknowwhatyoudidlastweek"
                 dialect = 'org.hibernate.dialect.PostgreSQLDialect'
-            }
         }
     }
 }

@@ -10,7 +10,7 @@ Any parameter with 'javamelody.' prefix configured in this file will be add as i
 /*
 The parameter disabled (false by default) just disables the monitoring.
  */
-//javamelody.disabled = false
+javamelody.disabled = false
 
 /*
 The parameter system-actions-enabled (true by default) enables some system actions.
@@ -36,8 +36,8 @@ The parameter url-exclude-pattern is a regular expression to exclude some urls f
 /*
 Specify jndi name of datasource to monitor in production environment
  */
-/*environments {
+environments {
     production {
-        javamelody.datasources = 'java:comp/env/myapp/mydatasource'
+        javamelody.datasources = 'java:comp/env/jdbc/iknowwhatyoudidlastweek'
     }
-}*/
+}

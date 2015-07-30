@@ -128,23 +128,26 @@ log4j.main = {
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'thepieuvre.iknowwhatyoudidlastweek.security.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'thepieuvre.iknowwhatyoudidlastweek.security.UserRole'
 grails.plugin.springsecurity.authority.className = 'thepieuvre.iknowwhatyoudidlastweek.security.Role'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                ['permitAll'],
-    '/**':              ['IS_AUTHENTICATED_FULLY'],
-    '/dbconsole/**':    ['ROLE_ROOT'],
-	'/index':           ['permitAll'],
-	'/index.gsp':       ['permitAll'],
-	'/assets/**':       ['permitAll'],
-	'/**/js/**':        ['permitAll'],
-	'/**/css/**':       ['permitAll'],
-	'/**/images/**':    ['permitAll'],
-	'/**/favicon.ico':  ['permitAll']
-]
 
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+        '/':                     ['permitAll'],
+        '/**':                   ['IS_AUTHENTICATED_FULLY'],
+        '/dbconsole/**':         ['ROLE_ROOT'],
+        '/console/**':           ['ROLE_ROOT'],
+        '/plugins/console*/**':  ['ROLE_ROOT'],
+        '/monitoring/**':        ['ROLE_ROOT'],
+        '/index':                ['permitAll'],
+        '/index.gsp':            ['permitAll'],
+        '/assets/**':            ['permitAll'],
+        '/**/js/**':             ['permitAll'],
+        '/**/css/**':            ['permitAll'],
+        '/**/images/**':         ['permitAll'],
+        '/**/favicon.ico':       ['permitAll']
+]
 grails.plugin.springsecurity.roleHierarchy = '''
   ROLE_ROOT > ROLE_MEMBER
 '''
-// TODO
+// TODO Alex 30/07
 grails.plugin.springsecurity.ui.register.emailBody
 grails.plugin.springsecurity.ui.register.emailFrom
 grails.plugin.springsecurity.ui.register.emailSubject
@@ -154,4 +157,7 @@ grails.plugin.springsecurity.ui.forgotPassword.emailBody
 grails.plugin.springsecurity.ui.forgotPassword.emailFrom
 grails.plugin.springsecurity.ui.forgotPassword.emailSubject
 grails.plugin.springsecurity.ui.forgotPassword.postResetUrl
+
+// Grails Plugin Console
+grails.plugin.console.enabled = true
 
