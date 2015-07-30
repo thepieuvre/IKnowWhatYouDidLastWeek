@@ -77,5 +77,9 @@ grails.project.dependency.resolution = {
         // Product requirements
         compile ':spring-security-core:2.0-RC5'
         compile ":spring-security-ui:1.0-RC2"
+
+        // Monitoring & Admin
+        compile ":console:1.5.5"
+        compile ":grails-melody:1.56.0"
     }
 }
