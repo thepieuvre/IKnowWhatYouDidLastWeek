@@ -68,6 +68,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${projectInstance?.organization}">
+				<li class="fieldcontain">
+					<span id="organization-label" class="property-label"><g:message code="project.organization.label" default="Organization" /></span>
+					
+						<span class="property-value" aria-labelledby="organization-label"><g:link controller="organization" action="show" id="${projectInstance?.organization?.id}">${projectInstance?.organization?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${projectInstance?.phases}">
 				<li class="fieldcontain">
 					<span id="phases-label" class="property-label"><g:message code="project.phases.label" default="Phases" /></span>

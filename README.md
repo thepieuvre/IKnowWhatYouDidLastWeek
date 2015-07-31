@@ -20,6 +20,7 @@ This project is a Project Time Reporting Manager for Open Organization.
 ## Roadmap
 
  * 0.2 Birt Reporting
- * 0.3 Scheduling Birt reports
- * 0.4 Charts
+ * Scheduling Birt reports
+ * Charts
+ * Automatic reminders
 

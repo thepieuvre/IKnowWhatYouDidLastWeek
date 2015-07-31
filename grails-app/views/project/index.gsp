@@ -34,6 +34,8 @@
 					
 						<g:sortableColumn property="lastUpdated" title="${message(code: 'project.lastUpdated.label', default: 'Last Updated')}" />
 					
+						<th><g:message code="project.organization.label" default="Organization" /></th>
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -49,6 +51,8 @@
 						<td><g:formatDate date="${projectInstance.dateCreated}" /></td>
 					
 						<td><g:formatDate date="${projectInstance.lastUpdated}" /></td>
+					
+						<td>${fieldValue(bean: projectInstance, field: "organization")}</td>
 					
 					</tr>
 				</g:each>
