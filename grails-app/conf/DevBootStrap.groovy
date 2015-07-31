@@ -13,7 +13,7 @@ class DevBootStrap {
     def init = { servletContext ->
 
         // Some fake data for development
-        if (Environment.DEVELOPMENT) {
+        if (Environment.current == Environment.DEVELOPMENT) {
             Organization myOrg = new Organization()
             myOrg.name = 'The Pieuvre'
             myOrg.code = 'thepieuvre'
