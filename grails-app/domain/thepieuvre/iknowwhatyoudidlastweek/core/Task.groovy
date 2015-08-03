@@ -18,6 +18,6 @@ class Task {
     }
 
     String toString() {
-        name
+        "$project - $name"
     }
 }
