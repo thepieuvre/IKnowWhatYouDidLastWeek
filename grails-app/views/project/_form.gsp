@@ -29,6 +29,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'organization', 'error')} required">
+	<label for="organization">
+		<g:message code="project.organization.label" default="Organization" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="organization" name="organization.id" from="${thepieuvre.iknowwhatyoudidlastweek.organization.Organization.list()}" optionKey="id" required="" value="${projectInstance?.organization?.id}" class="many-to-one"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: projectInstance, field: 'phases', 'error')} ">
 	<label for="phases">
 		<g:message code="project.phases.label" default="Phases" />

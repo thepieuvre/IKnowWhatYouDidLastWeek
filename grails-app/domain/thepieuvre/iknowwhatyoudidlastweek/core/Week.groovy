@@ -24,6 +24,6 @@ class Week {
     }
 
     String toString() {
-        "$week / $year"
+        "$member > $week - $year"
     }
 }
